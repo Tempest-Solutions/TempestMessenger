@@ -1,11 +1,7 @@
+//const host = window.location.host;
 
-<<<<<<< HEAD
-const HTTP_LINK = 'http://tempest-server:4000';
-const WS_LINK = 'ws://tempest-server:4000/graphql';
-=======
-const HTTP_LINK = 'http://localhost:4000';
-const WS_LINK = 'ws://localhost:4000/graphql';
->>>>>>> 92826a997cda1ea836f9f4d7e806b6e1f2b242de
+const HTTP_LINK = 'http://localhost:4000'; //'http://tempest-server:4000'; //'/graphql/'; '/graphql/';
+const WS_LINK = 'http://localhost:4000/graphql'; //'ws://tempest-server:4000/graphql';  //`ws://${host}:4000/graphql`; //'ws:/graphql/';
 const DEFAULT_AVATAR = 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y';
 
 

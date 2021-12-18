@@ -11,7 +11,7 @@ const server = new ApolloServer(
     typeDefs, 
     resolvers,
     context: context_middleware,
-    //subscriptions: { path: '/' },
+    //subscriptions: { path: '/' }
 });
 
 
@@ -45,7 +45,7 @@ const start = async () => {
         
         if (process.env.NODE_ENV = 'development') await sequelize.sync({ alter: true });
 
-        server.listen().then(({ url }: any)/*(server: any)*/ => 
+        server.listen().then(({ url/*, subscriptionsUrl*/ }: any)/*(server: any)*/ => 
         {
             console.log(`🚀 Server ready at ${url /*server.url*/}`);
             //console.log(`🚀 Subscriptions ready at ${server.subscriptionsUrl}`)
