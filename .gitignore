@@ -6,8 +6,8 @@ server/dist
 pgdata
 
 .env
-.development.env
-.production.env
+server/.development.env
+server/.production.env
 server/.env
 client/.env
 

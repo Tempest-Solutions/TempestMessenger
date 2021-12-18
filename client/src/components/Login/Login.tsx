@@ -89,7 +89,7 @@ const Login: React.FC = () =>
                     </Form.Group>
                     <div className="mt-3">
                         <small>Don't have an account?  </small>
-                        <Link to="/register">Register</Link>
+                        <Link to="/register">Registration</Link>
                     </div>
                     <Button 
                         type="submit" 

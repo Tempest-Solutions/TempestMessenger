@@ -70,7 +70,7 @@ const Register: React.FC = () =>
         <Row className="bg-white py-4 justify-content-center rounded">
             <Col sm={8} md={6} lg={4}>
                 <h1 className="text-center">
-                    Register
+                    Registration
                 </h1>
                 <Form onSubmit={submit_register_form}>
                     <Form.Group>

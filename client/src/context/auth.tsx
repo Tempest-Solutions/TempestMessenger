@@ -12,7 +12,7 @@ let user: any = null;
 const AuthStateContext = createContext<State | undefined>(undefined);
 const AuthDispatchContext = createContext<Dispatch | undefined>(undefined, );
 
-const token = localStorage.getItem('token')
+const token = localStorage.getItem('token');
 
 if (token) 
 {

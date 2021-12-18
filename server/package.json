@@ -11,7 +11,7 @@
   "author": "Lucifer13Freeman",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^16.3.1",
+    "@types/node": "^16.11.14",
     "@types/validator": "^13.6.3",
     "nodemon": "^2.0.12",
     "sequelize-cli": "^6.2.0",
