@@ -1,0 +1,37 @@
+version: "3.8"
+services:
+  tempest-db:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: postgres
+      POSTGRES_DB: db_tempest_messenger
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - tempest
+  tempest-server:
+    image: lucifer13freeman/tempest-messenger-server
+    ports:
+      - "4000:4000"
+    networks:
+      - tempest
+    depends_on:
+      - tempest-db
+  tempest-client:
+    image: lucifer13freeman/tempest-messenger-client
+    stdin_open: true
+    ports: 
+      - "3000:3000"
+    networks:
+      - tempest
+    depends_on:
+      - tempest-server
+networks:
+  tempest:
+    driver: bridge
+volumes:
+  pgdata:
+    driver: local
