@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 require('dotenv').config({ path: `./.${process.env.NODE_ENV}.env` });
+=======
+require('dotenv').config();
+>>>>>>> 92826a997cda1ea836f9f4d7e806b6e1f2b242de
 const { ApolloServer } = require('apollo-server');
 const resolvers = require('./graphql/resolvers');
 const typeDefs = require('./graphql/typeDefs');
@@ -51,7 +55,14 @@ const start = async () => {
             //console.log(`🚀 Subscriptions ready at ${server.subscriptionsUrl}`)
         });
     }
+<<<<<<< HEAD
     catch (err) { console.log(err); }
+=======
+    catch (e)
+    {
+        console.log(e);
+    }
+>>>>>>> 92826a997cda1ea836f9f4d7e806b6e1f2b242de
 }
 
 start();
