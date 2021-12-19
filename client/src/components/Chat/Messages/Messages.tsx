@@ -6,7 +6,6 @@ import Message from './Message/Message';
 import { SET_USER_MESSAGES } from '../../../constants/actions';
 import { GET_MESSAGES } from '../../../graphql/queries';
 import { SEND_MESSAGE } from '../../../graphql/mutations';
-import { ENETRESET } from 'constants';
 
 
 const Messages: React.FC = () => 
